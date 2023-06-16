@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Car Details and Image Upload Form</title>
+</head>
+<body>
+  <h1>Car Details and Image Upload Form</h1>
+
+  <form action="/upload" method="POST" enctype="multipart/form-data">
+    <div>
+      <label for="region">Region:</label>
+      <input type="text" id="region" name="region" required>
+    </div>
+
+    <div>
+      <label for="make">Make:</label>
+      <input type="text" id="make" name="make" required>
+    </div>
+
+    <div>
+      <label for="color">Color:</label>
+      <input type="text" id="color" name="color" required>
+    </div>
+
+    <div>
+      <label for="condition">Condition:</label>
+      <input type="text" id="condition" name="condition" required>
+    </div>
+
+    <div>
+      <label for="transmission">Transmission:</label>
+      <input type="text" id="transmission" name="transmission" required>
+    </div>
+
+    <div>
+      <label for="mileage">Mileage:</label>
+      <input type="number" id="mileage" name="mileage">
+    </div>
+
+    <div>
+      <label for="vin">VIN/Chassis Number:</label>
+      <input type="text" id="vin" name="vin" required>
+    </div>
+
+    <div>
+      <label for="registered">Registered:</label>
+      <input type="text" id="registered" name="registered" required>
+    </div>
+
+    <div>
+      <label for="description">Description:</label>
+      <textarea id="description" name="description" required></textarea>
+    </div>
+
+    <div>
+      <label for="price">Price:</label>
+      <input type="number" id="price" name="price" required>
+    </div>
+
+    <div>
+      <label for="negotiable">Negotiable:</label>
+      <select id="negotiable" name="negotiable" required>
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="sellerPhoneNumber">Seller Phone Number:</label>
+      <input type="text" id="sellerPhoneNumber" name="sellerPhoneNumber" required>
+    </div>
+
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+
+    <div>
+      <label for="images">Upload Images (up to 5):</label>
+      <input type="file" id="images" name="images" multiple accept="image/*">
+    </div>
+
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
+
